@@ -5,8 +5,8 @@ const Home = props =>{
         <>
             {(sessionStorage.getItem("email") === "adriano@email.com" && sessionStorage.getItem("senha") === "123456") || (sessionStorage.getItem("email") === "professor@email.com" && sessionStorage.getItem("senha") === "123456")  ? 
                 <>
-                    <h1>Ola</h1>
-                    <h2>Hello</h2>
+                    <h1>Seja bem vindo</h1>
+                    
                 </>
             : window.location.href = "/"}
         </>
