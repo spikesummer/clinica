@@ -41,7 +41,7 @@ const Login = props =>{
         <div className="login">
             <div className="container mt-5">
                 <div className="row justify-content-center">
-                    <div className="col-5 col-lg-4 col-xl-3">
+                    <div className="col-sm-6 col-lg-4 col-xl-3">
                         <div className="card shadow">
                             <div className="card-body">
                                 <h2 className="card-title text-center mb-4">LOGIN</h2>
