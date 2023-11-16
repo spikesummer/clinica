@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css';
 import Menu from '../menu/Menu';
+import Header from "../header/Header";
 
 const Home = props =>{
     return(
@@ -10,7 +11,10 @@ const Home = props =>{
                     <div className="container-fluid row p-0 m-0 container-home">
                         {/* MENU */}
                         <Menu/>
-                        <div className="col bg-warning"><h1>main</h1></div>
+                        <div className="col p-3 bg-light">
+                            <Header/>
+                            <h1>main</h1>
+                        </div>
                     </div>                    
                 </div>
             : window.location.href = "/"}

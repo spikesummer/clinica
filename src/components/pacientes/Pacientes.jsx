@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menu from "../menu/Menu";
+import Header from "../header/Header";
 
 
 const Pacientes = props => {
@@ -85,19 +86,20 @@ const Pacientes = props => {
                     <div className="container-fluid row p-0 m-0 container-home">
                         <Menu/>
                             
-                        <div className="col p-3 bg-light">
-                                <div className="col-12 bg-info p-3 mb-4"><h1>header</h1></div>
-
-                            <div className="row">
-                                
-                                
+                        <div className="col p-3 bg-light">                            
+                            <Header/>
+                            <div className="row">                                                
                                 <div className="col m-2 shadow-lg p-3">
                                     <div className="row ">
-                                        <div className="col">
-                                            <label htmlFor="" className="form-label form-check-inline">Pesquisar</label>
-                                            <input type="text" className=" form-control w-25 form-check-inline" name="" id="" />
+                                        <div className="col d-flex align-items-center">
+                                        <div className="input-group flex-nowrap">
+                                            <span className="input-group-text" id="addon-wrapping"><i className="bi bi-search"></i></span>
+                                            <input type="text" className="form-control fst-italic" placeholder="Pesquisar paciente" aria-label="pesquisar" aria-describedby="addon-wrapping"/>
+                                        </div>
+                                            {/* <label htmlFor="" className="form-label form-check-inline">Pesquisar</label>
+                                            <input type="text" className=" form-control form-check-inline" name="" id="" /> */}
                                             {/* <!-- Button trigger modal --> */}
-                                            <button type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <button type="button" className="btn btn-success ms-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             Cadastrar paciente
                                             </button>
 
