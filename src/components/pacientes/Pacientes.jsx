@@ -47,6 +47,7 @@ const Pacientes = props => {
         pacientesArmazenados.push(res);
 
         localStorage.setItem("pacientes", JSON.stringify(pacientesArmazenados));
+        setPacienteList(pacientesArmazenados);
         limpaFormulario();
     }
 
@@ -95,7 +96,7 @@ const Pacientes = props => {
     let estados = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
    
     useEffect(
-        ()=>{setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || [])}, []
+        ()=>setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || []), []
     );
 
     return(
