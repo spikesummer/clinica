@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "../menu/Menu";
 import Header from "../header/Header";
 
@@ -16,6 +16,7 @@ const Pacientes = props => {
     const [estadoPaciente, setEstadoPaciente] = useState(null);
     const [cepPaciente, setCepPaciente] = useState(null);
     const [dentistaPaciente, setDentistaPaciente] = useState("Dr. João Ribeiro");
+    const [pacienteList, setPacienteList] = useState([]);
 
     const salvar = ()=>{
 
@@ -74,10 +75,28 @@ const Pacientes = props => {
         const ultimoId = pacientes[pacientes.length - 1].id;
         return ultimoId + 1;
     }
-     
+    
+    const buscar = (e)=>{
+        setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || [])
+        let res = []
+        if(e === ""){
+            return setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || [])
+        }
+
+        pacienteList.map((paciente) => {                                 
+            if(`${paciente.dadosPaciente.nome}`.toLowerCase().includes(`${e}`.toLowerCase())){
+                res.push(paciente)
+            }
+        }
+        )
+        res.length !== 0 ? setPacienteList(res) : setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || [])              
+    }
     
     let estados = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
-    let pacienteList = JSON.parse(localStorage.getItem('pacientes')) || [];
+   
+    useEffect(
+        ()=>{setPacienteList(JSON.parse(localStorage.getItem('pacientes')) || [])}, []
+    );
 
     return(
         <>
@@ -94,11 +113,8 @@ const Pacientes = props => {
                                         <div className="col d-flex align-items-center">
                                         <div className="input-group flex-nowrap">
                                             <span className="input-group-text" id="addon-wrapping"><i className="bi bi-search"></i></span>
-                                            <input type="text" className="form-control fst-italic" placeholder="Pesquisar paciente" aria-label="pesquisar" aria-describedby="addon-wrapping"/>
-                                        </div>
-                                            {/* <label htmlFor="" className="form-label form-check-inline">Pesquisar</label>
-                                            <input type="text" className=" form-control form-check-inline" name="" id="" /> */}
-                                            {/* <!-- Button trigger modal --> */}
+                                            <input type="text" className="form-control fst-italic" onChange={(e)=> buscar(e.target.value)} placeholder="Pesquisar paciente" aria-label="pesquisar" aria-describedby="addon-wrapping"/>
+                                        </div>                                            
                                             <button type="button" className="btn btn-success ms-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             Cadastrar paciente
                                             </button>
@@ -107,7 +123,7 @@ const Pacientes = props => {
                                     </div>
 
                                     {/* <!-- Modal --> */}
-                                    <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div className="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div className="modal-dialog modal-dialog-centered">
                                         <div className="modal-content">
                                         <div className="modal-header">
@@ -163,12 +179,12 @@ const Pacientes = props => {
                                                 </div>
                                                 <div className="row d-flex flex-row">
                                                     <div className=" col-8 d-flex align-items-baseline  form-check-inline">
-                                                        <label htmlFor="cidade-form" class="form-label me-2">Cidade:</label>
-                                                        <input type="text" onChange={e =>setCidadePaciente(e.target.value)} value={cidadePaciente} class="form-control" id="cidade-form" aria-describedby="cidade-form"/>       
+                                                        <label htmlFor="cidade-form" className="form-label me-2">Cidade:</label>
+                                                        <input type="text" onChange={e =>setCidadePaciente(e.target.value)} value={cidadePaciente} className="form-control" id="cidade-form" aria-describedby="cidade-form"/>       
                                                     </div>
                                                     
                                                     <select className="form-select w-25" id="select" aria-label="Default select example" onChange={e =>setEstadoPaciente(e.target.value)} >
-                                                        <option selected >Selecione um Estado</option>
+                                                        <option selected>Selecione um Estado</option>
                                                         {
                                                             estados.map((estado, index) => (<option key={index} value= {estado}> {estado}</option>))                                                        
                                                         }

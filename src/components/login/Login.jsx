@@ -47,16 +47,16 @@ const Login = props =>{
                                 <h2 className="card-title text-center mb-4">LOGIN</h2>
                                 <form onSubmit={e=>handlerLogin(e)}>
                                     <div className="mb-3">
-                                        <label for="username" className="form-label">Usuário</label>
+                                        <label htmlFor="username" className="form-label">Usuário</label>
                                         <input type="text" className="form-control" required id="username" onChange={(e) => setEmail(e.target.value)} value={emailInput} placeholder="Digite seu usuário"/>
                                     </div>
                                     <div className="mb-3">
-                                        <label for="password" className="form-label">Senha</label>
+                                        <label htmlFor="password" className="form-label">Senha</label>
                                         <input type="password" className="form-control" required onChange={e => setSenha(e.target.value)} value={senhaInput} id="password" placeholder="Digite sua senha"/>
                                     </div>
                                     <button type="submit" className="btn btn-primary w-100" >Entrar</button>
                                 </form>
-                                {errorLogin ? <p class="alert alert-warning mt-3" role="alert">{errorLogin}</p> : ''}
+                                {errorLogin ? <p className="alert alert-warning mt-3" role="alert">{errorLogin}</p> : ''}
                                 
                             </div>
                         </div>
