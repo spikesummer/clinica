@@ -21,45 +21,48 @@ const Home = props =>{
                                 <div className="col-5 col-lg-4 col-xl-4">
                                     <h3 className="text-center text-secondary fst-italic">Agenda do dia</h3>
                                     <hr />
-                                    <div className="card mb-3 p-2 border-5 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">12:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
-                                    </div>
-                                    <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                        <h5 className="text-secondary">consulta 1</h5>
-                                        <span className="text-secondary fst-italic">13:00h</span>
+                                    <div className="agendaBox">
+
+                                        <div className="card mb-3 p-2 border-5 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">12:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
+                                        <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
+                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <span className="text-secondary fst-italic">13:00h</span>
+                                        </div>
                                     </div>
                                     
                                 </div>
