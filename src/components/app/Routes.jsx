@@ -4,6 +4,7 @@ import Home from '../home/Home';
 import Login from '../login/Login';
 import Pacientes from '../pacientes/Pacientes';
 import Relatorios from '../relatorios/Relatorios';
+import Agenda from '../agenda/Agenda';
 
 const Routers = props => {
     return(
@@ -19,6 +20,9 @@ const Routers = props => {
             </Routes>
             <Routes>
                 <Route exact path="/relatorios" Component={Relatorios}/>
+            </Routes>
+            <Routes>
+                <Route exact path="/agenda" Component={Agenda}/>
             </Routes>
         </>
     )

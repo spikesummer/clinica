@@ -53,7 +53,7 @@ const Menu = ()=>{
                             <div className="p-2 hover ps-4">Contas a Pagar</div>
                         </div>
 
-                    <div className="p-2  fs-4 text-light hover">
+                    <div className="p-2  fs-5 text-light hover">
                         <i className="bi bi-gear me-2"></i>
                         Configurações
                     </div>
