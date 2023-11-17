@@ -4,17 +4,17 @@ import Header from "../header/Header";
 
 
 const Pacientes = props => {
-    const [idPaciente, setIdPaciente] = useState(null);
-    const [nomePaciente, setNomePaciente] = useState(null);
-    const [dNascPaciente, setdNascPaciente] = useState(null);
-    const [cpfPaciente, setCpfPaciente] = useState(null);
-    const [sexoPaciente, setSexoPaciente] = useState(null);
-    const [telPaciente, setTelPaciente] = useState(null);
-    const [logradouroPaciente, setLogradouroPaciente] = useState(null);
-    const [numeroPaciente, setNumeroPaciente] = useState(null);
-    const [cidadePaciente, setCidadePaciente] = useState(null);
-    const [estadoPaciente, setEstadoPaciente] = useState(null);
-    const [cepPaciente, setCepPaciente] = useState(null);
+    const [idPaciente, setIdPaciente] = useState("");
+    const [nomePaciente, setNomePaciente] = useState("");
+    const [dNascPaciente, setdNascPaciente] = useState("");
+    const [cpfPaciente, setCpfPaciente] = useState("");
+    const [sexoPaciente, setSexoPaciente] = useState("");
+    const [telPaciente, setTelPaciente] = useState("");
+    const [logradouroPaciente, setLogradouroPaciente] = useState("");
+    const [numeroPaciente, setNumeroPaciente] = useState("");
+    const [cidadePaciente, setCidadePaciente] = useState("");
+    const [estadoPaciente, setEstadoPaciente] = useState("");
+    const [cepPaciente, setCepPaciente] = useState("");
     const [dentistaPaciente, setDentistaPaciente] = useState("Dr. João Ribeiro");
     const [pacienteList, setPacienteList] = useState([]);
 
@@ -124,7 +124,7 @@ const Pacientes = props => {
                                     </div>
 
                                     {/* <!-- Modal --> */}
-                                    <div className="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div className="modal fade" id="exampleModal" tabIndex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div className="modal-dialog modal-dialog-centered">
                                         <div className="modal-content">
                                         <div className="modal-header">
@@ -230,7 +230,7 @@ const Pacientes = props => {
                                                                 <td>{cpf}</td>
                                                                 <td>
                                                                     <button className="btn btn-outline-success btn-sm me-1 p-1">Prontuário</button>
-                                                                    <button className="btn btn-outline-primary btn-sm me-1 p-1">Editar</button>
+                                                                    <button className="btn btn-outline-primary btn-sm me-1 p-1" data-bs-toggle="modal" data-bs-target="#exampleModal" id={id}>Editar</button>
                                                                     <button className="btn btn-outline-danger btn-sm me-1 p-1">Excluir</button>
                                                                 </td>
                                                             </tr>
