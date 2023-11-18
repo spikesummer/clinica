@@ -24,3 +24,8 @@
 .container-home{
     height: 100vh;
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--COR-2);
+    --bs-tooltip-color: var(--COR-5);
+  }

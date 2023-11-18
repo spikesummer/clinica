@@ -185,7 +185,7 @@ const Pacientes = props => {
                                                     </div>
                                                     
                                                     <select className="form-select w-25" id="select" aria-label="Default select example" onChange={e =>setEstadoPaciente(e.target.value)} >
-                                                        <option selected>Selecione um Estado</option>
+                                                        <option selected value={'Selecione um Estado'} >Selecione um Estado</option>
                                                         {
                                                             estados.map((estado, index) => (<option key={index} value= {estado}> {estado}</option>))                                                        
                                                         }
@@ -229,7 +229,7 @@ const Pacientes = props => {
                                                                 <td>{tel}</td>
                                                                 <td>{cpf}</td>
                                                                 <td>
-                                                                    <button className="btn btn-outline-success btn-sm me-1 p-1">Prontuário</button>
+                                                                    <button className="btn btn-outline-success btn-sm me-1 p-1"id={id} onClick={(e)=>e.target.id}>Prontuário</button>
                                                                     <button className="btn btn-outline-primary btn-sm me-1 p-1" data-bs-toggle="modal" data-bs-target="#exampleModal" id={id}>Editar</button>
                                                                     <button className="btn btn-outline-danger btn-sm me-1 p-1">Excluir</button>
                                                                 </td>
