@@ -49,8 +49,12 @@ const Menu = ()=>{
                         Financeiro
                     </div>
                         <div className="vstack gap-1">
-                            <div className="p-2 hover ps-4">Contas a Receber</div>
-                            <div className="p-2 hover ps-4">Contas a Pagar</div>
+                            <div className="p-2 hover ps-4">
+                                <a href="/contas-a-receber">Contas a Receber</a>
+                            </div>
+                            <div className="p-2 hover ps-4">
+                                <a href="/contas-a-pagar">Contas a Pagar</a>
+                            </div>
                         </div>
 
                     <div className="p-2  fs-5 text-light hover">

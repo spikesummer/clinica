@@ -24,43 +24,43 @@ const Home = props =>{
                                     <div className="agendaBox">
 
                                         <div className="card mb-3 p-2 border-5 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Maria Conceição</h5>
                                             <span className="text-secondary fst-italic">12:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">João do Valle</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Francisco Silva</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Amaro de Jesus</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">José dos Santos</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Claudio Almeida</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Ana Paula Martins</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Wilson Carvalho</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Alex dos Santos</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                         <div className="card mb-3 p-2 border-5 border-start-1 border-end-0 border-bottom-0 border-top-0  border-success shadow-sm">
-                                            <h5 className="text-secondary">consulta 1</h5>
+                                            <h5 className="text-secondary">Pedro Andrade</h5>
                                             <span className="text-secondary fst-italic">13:00h</span>
                                         </div>
                                     </div>
