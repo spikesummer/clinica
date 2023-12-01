@@ -31,7 +31,7 @@ const Agenda = props => {
         localStorage.setItem("pacientes", JSON.stringify(dataBd))
     }
 
-    console.log(dataBd[1].prontuario.data.slice(-2));
+    //console.log(dataBd[1].prontuario.data.slice(-2));
 
     //date === dataBd.prontuario.data.slice(-2) "8:00" && "dentista" print
  
