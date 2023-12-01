@@ -35,15 +35,21 @@ const Agenda = props => {
 
     //date === dataBd.prontuario.data.slice(-2) "8:00" && "dentista" print
  
-    // banco.map(
-    //     if(registro.data == datarecebida) {
-    //         if(hora === horarios[2]){
-    //                 registro.dentista === dentista[index]
-    //                 horario
-    //         }
-    //     }
-    // )
-
+    // const agendatable = ()=>{
+    //     const table = [];
+       
+    //     dataBd.map((registro)=>{
+    //         horarios.forEach((item, index)=>{
+    //             if(registro.prontuario.data.slice(-2) === date){
+    //                 if(registro.prontuario.hora === item){
+    //                     table.push(`{${item}, ${registro.dadosPaciente.nome}, ${registro.prontuario.dentista}}`)
+    //                 }
+    //             }
+    //         })
+    //     })
+    //     console.log(table);
+    // }
+    // agendatable();
 
     return(
         <>
@@ -154,7 +160,7 @@ const Agenda = props => {
                                             <th scope="row">9:00</th>
                                             <td>Maria Silva almeida</td>
                                             <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>Flavio Carvalho</td>
                                             <td>Maria Silva almeida</td>
                                         </tr>
                                         <tr >
@@ -167,16 +173,16 @@ const Agenda = props => {
                                         <tr >
                                             <th scope="row">11:00</th>
                                             <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>João Melo</td>
                                             <td>Maria Silva almeida</td>
                                             <td>Maria Silva almeida</td>
                                         </tr>
                                         <tr >
                                             <th scope="row">12:00</th>
                                             <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
                                         </tr>
                                         <tr >
                                             <th scope="row">13:00</th>
@@ -194,24 +200,24 @@ const Agenda = props => {
                                         </tr>
                                         <tr >
                                             <th scope="row">15:00</th>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
                                         </tr>
                                         <tr >
                                             <th scope="row">16:00</th>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
                                         </tr>
                                         <tr >
                                             <th scope="row">17:00</th>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
-                                            <td>Maria Silva almeida</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
                                         </tr>
                                        
                                     </tbody>
