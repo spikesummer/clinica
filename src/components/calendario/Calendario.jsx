@@ -1,7 +1,9 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext} from "react";
 import './style.css'
+import { dateContext } from "../../context/themeContext";
 
 const Calendario = props => {
+    const {toggleDate} = useContext(dateContext);
 
     const [ano, setAno] = useState(Number(new Date().getFullYear()));
     const [mes, setMes] = useState(Number(new Date().getMonth()));
@@ -97,7 +99,7 @@ const Calendario = props => {
                 </div>
             </div>
             <div className="bottom">
-                <div className="days" onClick={(item)=>{console.log(`${item.target.innerHTML}-${item.target.dataset.mes}-${item.target.dataset.ano}`)}}>
+                <div className="days" onClick={(item)=> toggleDate(item.target.innerHTML)}>
             </div>
                 
             </div>

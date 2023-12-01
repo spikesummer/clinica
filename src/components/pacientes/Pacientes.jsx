@@ -15,11 +15,10 @@ const Pacientes = props => {
     const [cidadePaciente, setCidadePaciente] = useState("");
     const [estadoPaciente, setEstadoPaciente] = useState("");
     const [cepPaciente, setCepPaciente] = useState("");
-    const [dentistaPaciente, setDentistaPaciente] = useState("Dr. João Ribeiro");
     const [pacienteList, setPacienteList] = useState([]);
 
     const salvar = ()=>{
-
+        
         let pacientesArmazenados = JSON.parse(localStorage.getItem('pacientes')) || [];
                 
         const res = {
@@ -39,8 +38,10 @@ const Pacientes = props => {
                 cep: cepPaciente
             }, 
             prontuario:{
-                dentista: dentistaPaciente,
-                tratamento:[]
+                data: "",
+                hora: "",
+                dentista: "",
+                tratamento: ""
             }
         };
         res.id = generateNextId(pacientesArmazenados);
@@ -108,6 +109,14 @@ const Pacientes = props => {
                             
                         <div className="col p-3 bg-light">                            
                             <Header/>
+
+                            <div className="row">
+                                <div className="col flex-col text-end mb-3">
+                                    <h5 className="me-3 fst-italic text-secondary" >Pacientes</h5>
+                                    <hr />
+                                </div>
+                            </div>
+
                             <div className="row">                                                
                                 <div className="col m-2 shadow-lg p-3">
                                     <div className="row ">
@@ -184,8 +193,7 @@ const Pacientes = props => {
                                                         <input type="text" onChange={e =>setCidadePaciente(e.target.value)} value={cidadePaciente} className="form-control" id="cidade-form" aria-describedby="cidade-form"/>       
                                                     </div>
                                                     
-                                                    <select className="form-select w-25" id="select" aria-label="Default select example" onChange={e =>setEstadoPaciente(e.target.value)} >
-                                                        <option selected value={'Selecione um Estado'} >Selecione um Estado</option>
+                                                    <select className="form-select w-25" id="select" aria-label="Default select example" value={estadoPaciente} onChange={e =>setEstadoPaciente(e.target.value)} >
                                                         {
                                                             estados.map((estado, index) => (<option key={index} value= {estado}> {estado}</option>))                                                        
                                                         }

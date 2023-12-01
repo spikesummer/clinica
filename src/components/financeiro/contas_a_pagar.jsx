@@ -18,7 +18,7 @@ export const Contas_a_pagar = props =>{
         {
             id: 1,
             nomeFatura: "Conta de luz",
-            valor: 75.00,
+            valor: 65.00,
             vencimento: "11-05-2023",
             pagamento: "",
             status: "aberto"
@@ -26,7 +26,7 @@ export const Contas_a_pagar = props =>{
         {
             id: 1,
             nomeFatura: "Conta de luz",
-            valor: 75.00,
+            valor: 175.00,
             vencimento: "11-05-2023",
             pagamento: "",
             status: "aberto"
@@ -34,7 +34,7 @@ export const Contas_a_pagar = props =>{
         {
             id: 1,
             nomeFatura: "Conta de luz",
-            valor: 75.00,
+            valor: 345.00,
             vencimento: "11-05-2023",
             pagamento: "",
             status: "aberto"
@@ -42,7 +42,7 @@ export const Contas_a_pagar = props =>{
         {
             id: 1,
             nomeFatura: "Conta de luz",
-            valor: 75.00,
+            valor: 145.00,
             vencimento: "11-05-2023",
             pagamento: "",
             status: "aberto"
@@ -50,7 +50,7 @@ export const Contas_a_pagar = props =>{
         {
             id: 1,
             nomeFatura: "Conta de luz",
-            valor: 75.00,
+            valor: 655.00,
             vencimento: "11-05-2023",
             pagamento: "",
             status: "aberto"
@@ -98,6 +98,12 @@ export const Contas_a_pagar = props =>{
                         <div className="col p-3 bg-light">                            
                             <Header/>
                         
+                            <div className="row">
+                                <div className="col flex-col text-end mb-3">
+                                    <h5 className="me-3 fst-italic text-secondary" >Contas a pagar</h5>
+                                    <hr />
+                                </div>
+                            </div>
 
                             <div className="col bg-light p-3 shadow">
                                 <div className="col d-flex align-items-center">

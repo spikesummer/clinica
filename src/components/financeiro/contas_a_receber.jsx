@@ -9,82 +9,82 @@ export const Contas_a_receber = props =>{
     const contas = [
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Luiz Silva",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Carlos Almeida",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Ana Paula Franco",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Jose Pereira",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Andre Souza",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Maria Luiza Silva",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Alberto Costa",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Felipe Augusto",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Graziele Lemes",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         },
         {
             id: 1,
-            nomeFatura: "Conta de luz",
+            nomeFatura: "Fernanda Lima",
             valor: 75.00,
             vencimento: "11-05-2023",
-            pagamento: "",
+            pagamento: "tratamento odontologico",
             status: "aberto"
         }
     ]
@@ -98,7 +98,12 @@ export const Contas_a_receber = props =>{
                         <div className="col p-3 bg-light">                            
                             <Header/>
                         
-
+                            <div className="row">
+                                <div className="col flex-col text-end mb-3">
+                                    <h5 className="me-3 fst-italic text-secondary" >Contas a receber</h5>
+                                    <hr />
+                                </div>
+                            </div>
                             <div className="col bg-light p-3 shadow">
                                 <div className="col d-flex align-items-center">
                                 <div className="input-group flex-nowrap">
@@ -118,10 +123,10 @@ export const Contas_a_receber = props =>{
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Nome da Fatura</th>
+                                                    <th scope="col">Cliente</th>
                                                     <th scope="col">Valor</th>
                                                     <th scope="col">Vencimento</th>
-                                                    <th scope="col">Pagamento</th>
+                                                    <th scope="col">Descrição</th>
                                                     <th scope="col">status</th>
                                                     <th scope="col">Ações</th>
                                                 </tr>

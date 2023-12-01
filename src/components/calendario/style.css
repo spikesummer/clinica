@@ -105,7 +105,7 @@ span.prev, span.next{
     background: rgba(255, 255, 255, 0.4);
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 2350px) {
     .Container{
         width: calc(44.375rem / 2);
         min-height: calc(38.4375rem / 2);
