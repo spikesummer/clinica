@@ -40,7 +40,8 @@ const Menu = ()=>{
                         <div className="vstack gap-1">
                             <div className="p-2 hover ps-4">Consultas realizadas</div>
                             <div className="p-2 hover ps-4">Novos pacientes</div>
-                            <div className="p-2 hover ps-4">Orçamentos</div>
+                            <div className="p-2 hover ps-4">
+                                <a href="/orcamentos">Orçamentos</a></div>
                         </div>
                         
                         

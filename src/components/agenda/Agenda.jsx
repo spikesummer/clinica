@@ -37,7 +37,7 @@ const Agenda = props => {
  
     // const agendatable = ()=>{
     //     const table = [];
-       
+            
     //     dataBd.map((registro)=>{
     //         horarios.forEach((item, index)=>{
     //             if(registro.prontuario.data.slice(-2) === date){

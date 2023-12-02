@@ -36,6 +36,10 @@ const Pacientes = props => {
                 cidade: cidadePaciente,
                 estado: estadoPaciente,
                 cep: cepPaciente
+            },
+            financeiro:{
+                valor: "157,99",
+                tratamento: "canal"
             }, 
             prontuario:{
                 data: "",

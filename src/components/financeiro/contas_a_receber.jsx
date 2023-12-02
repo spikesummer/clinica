@@ -110,12 +110,60 @@ export const Contas_a_receber = props =>{
                                     <span className="input-group-text" id="addon-wrapping"><i className="bi bi-search"></i></span>
                                     <input type="text" className="form-control fst-italic" placeholder="pesquisar contas" aria-label="pesquisar" aria-describedby="addon-wrapping"/>
                                 </div>                                            
-                                    <button type="button" className="btn btn-success ms-3 text-nowrap" data-bs-toggle="modal" data-bs-target="">
+                                    <button type="button" className="btn btn-success ms-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#contasAreceber">
                                     Adicionar pagamento
                                     </button>
 
                                 </div>
                             </div>
+
+
+                             {/* <!-- Modal --> */}
+                             <div className="modal fade" id="contasAreceber" tabIndex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div className="modal-dialog modal-dialog-centered">
+                                        <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Cadastro de Contas</h1>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div className="modal-body">
+                                            <div className="form">
+                                                
+                                                <div className="mb-3 d-flex align-items-baseline">
+                                                    <label htmlFor="name-form" className="form-label me-2">Nome:</label>
+                                                    <input type="text" className="form-control" id="name-form" required   aria-describedby="name-form"/>                                                    
+                                                </div>
+                                                <div className="mb-3 d-flex align-items-baseline">
+                                                    <label htmlFor="nasc-form" className="form-label me-2 text-nowrap">Data de vencimento:</label>
+                                                    <input type="date" className="form-control w-50" id="nasc-form" aria-describedby="nasc-form"/>                                                    
+                                                </div>                                 
+
+
+                                                {/* ENDEREÇO */}
+                                                <div className="mb-3 mt-3 d-flex align-items-baseline">
+                                                    <label htmlFor="cep-form" className="form-label me-2">Valor</label>
+                                                    <input type="text" className="form-control w-25" maxLength={8} id="cep-form" aria-describedby="cep-form"/>                                                    
+                                                </div>
+                                                <div className="mb-3 mt-3 d-flex align-items-baseline">
+                                                    <label htmlFor="logradouro-form" className="form-label me-2">Tipo de pagamento:</label>
+                                                    <input type="text"  className="form-control" id="logradouro-form" aria-describedby="logradouro-form"/>                                                    
+                                                </div>
+                                                <div className="col d-flex">
+                                                    <div className="mb-3 d-flex align-items-baseline ">
+                                                        <label htmlFor="numero-form" className="form-label me-2">Status:</label>
+                                                        <input type="text" className="form-control me-1" id="numero-form" aria-describedby="numero-form"/>       
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="submit"  className="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
 
                             <div className="row mt-3">
                                     <div className="col">

@@ -21,7 +21,7 @@ const Routers = props => {
                 <Route exact path="/pacientes" Component={Pacientes}/>
             </Routes>
             <Routes>
-                <Route exact path="/relatorios" Component={Relatorios}/>
+                <Route exact path="/orcamentos" Component={Relatorios}/>
             </Routes>
             <Routes>
                 <Route exact path="/agenda" Component={Agenda}/>
